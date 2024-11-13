@@ -1,0 +1,44 @@
+.container, .header, .logo, .nav, .main, .aside, .footer
+  display: flex
+  flex-wrap: wrap
+  margin: 3px
+
+.container
+  background: red
+  flex: 1 1 100% //grow shrink basis
+
+.header
+  background: blue
+  flex: 1 1 100%
+  height: 100px
+
+.logo
+  background: teal
+  color: #fff
+  flex: 0 1 200px
+
+.nav
+  background: green
+  flex: 1 1 calc(100% - 300px)
+
+.main
+  background: yellow
+  flex: 20 1 500px
+  height: calc( 100vh - 224px )
+
+.aside
+  background: orange
+  flex: 1 1 200px 
+
+.footer
+  background: purple
+  flex: 1 1 100% 
+  height: 100px
+
+@media only screen and (max-width: 923px)
+  .main
+    height: calc( 100vh - 330px )
+  
+  .aside
+    flex: 1 1 100%
+    height: 100px
