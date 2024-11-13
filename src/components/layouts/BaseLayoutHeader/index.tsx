@@ -12,7 +12,6 @@ export default function BaseLayout({ children }: Props) {
         <nav className={styles.nav}>Menu</nav>
       </header>
       <main className={styles.main}>{children}</main>
-      <aside className={styles.aside}>Relacional</aside>
       <footer className={styles.footer}>Rodapé</footer>
     </div>
   );

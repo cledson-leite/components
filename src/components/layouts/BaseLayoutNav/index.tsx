@@ -10,7 +10,6 @@ export default function BaseLayout({ children }: Props) {
       <header className={styles.header}>Cabeçalho</header>
       <nav className={styles.nav}>Menu</nav>
       <main className={styles.main}>{children}</main>
-      <aside className={styles.aside}>Relacional</aside>
       <footer className={styles.footer}>Rodapé</footer>
     </div>
   );
