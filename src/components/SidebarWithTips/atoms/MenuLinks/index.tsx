@@ -1,8 +1,7 @@
 import WithIcon from "./WithIcon";
-import WithOutIcon from "./WithOutIcon";
+import WithoutIcon from "./WithoutIcon";
 
 export const MenuLink = {
   WithIcon,
-  WithOutIcon,
-  Outra: WithOutIcon
+  WithoutIcon,
 };

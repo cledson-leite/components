@@ -1,5 +1,6 @@
 import styles from './Sidebar.module.sass';
 import MenuItem from './molecules/MenuItem';
+import NavLinks from './molecules/NavLinks';
 import Profile from './molecules/Profile';
 
   export default function Sidebar() {
@@ -48,20 +49,7 @@ import Profile from './molecules/Profile';
     return (
       <div className={`${styles.sidebar} ${close && styles.close}`}>
         <Profile name="Cledson Leite" job="Web Designer" imgSrc="/logo.png" />
-
-        <ul className={styles['nav-links']}>
-          {routes.map((route: any, index: number) => {
-            return (
-              <MenuItem
-                href={route.href}
-                label={route.label}
-                options={route.options}
-                key={index}
-                icon={route.label}
-              />
-            );
-          })}
-        </ul>
+        <NavLinks routes={routes} />
       </div>
     );
   }

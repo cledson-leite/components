@@ -1,6 +1,6 @@
 import { MenuIcon } from "../../atoms/Icons/MenuIcon";
 import { MenuLink } from "../../atoms/MenuLinks";
-import { Tips } from "../Tips";
+import ToolTip from "../Tips";
 
 import styles from "./MenuItem.module.sass";
 
@@ -21,7 +21,7 @@ export default function MenuItem({options, href, label, icon}: Props){
         {!close && <span className={styles.name}>{label}</span>}
       </MenuLink.WithIcon>
       <div className={styles.tips}>
-        {!options.length ? <Tips.Blank label={label} /> : <Tips.WithOptions options={options} label={label} />}
+        <ToolTip label={label} options={options} />
       </div>
     </li>
   );
